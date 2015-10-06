@@ -35,6 +35,15 @@
 <a id="musicseedproject" class="anchor" href="#musicseedproject" aria-hidden="true"><span class="octicon octicon-link"></span></a>musicseedproject</h1>
 
 <p>COS 513 Semester Project</p>
+
+      <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
       </section>
     </div>
 
